@@ -1,0 +1,116 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0404;
+    overflow-x: hidden; 
+    color: #fff;
+}
+
+.container {
+    max-width: 500px; 
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add some padding at the sides */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+header {
+    background-color: #ff6b6b;
+    color: #151414;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.category-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.category {
+    flex: 1;
+    background-color: #daa1a1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.category p {
+    color: #eee;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.dress img, .skirt img {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dress:hover img, .skirt:hover img {
+    transform: scale(1.05);
+}
+
+.dress-description, .skirt-description {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #bc0545;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dress:hover .dress-description, .skirt:hover .skirt-description {
+    opacity: 1;
+}
+
+.dress-description h3, .skirt-description h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.dress-description ul, .skirt-description ul {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.dress-description ul li, .skirt-description ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

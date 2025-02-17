@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #744c24, #5e3e1f);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #8e5431, #6e3f21);
+    color: #f3e3d3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 5px; 
+}
+
+.category-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    background: linear-gradient(to bottom, #efcead, #d8b48d);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    padding: 20px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+.category h3 {
+    margin-top: 0;
+    color: #011001;
+}
+
+.category p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+
+.animation {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Added hover effect for category links */
+.category a:hover {
+    color: #000;
+}
+
+/* Added footer styling */
+footer {
+    background: #6e3f21;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Added smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+.category img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space beneath images */
+    border-radius: 8px; /* Apply border radius */
+}
+.contact-section {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+
+.contact-info p {
+    margin: 5px 20px; /* Add margin to separate contact info */
+}
